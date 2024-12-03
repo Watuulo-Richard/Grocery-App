@@ -24,7 +24,6 @@ nav {
 nav .Logo-Menu {
   display: flex;
   align-items: center;
-  gap: 3rem;
 }
 nav .Logo-Menu i {
   font-size: 2rem;
