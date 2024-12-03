@@ -5,13 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Grocery-App</title>
 </head>
 <body>
     <div class="conatiner">
         <nav>
-            <i class="fa-solid fa-bars"></i>
+            <div class="Logo-Menu">
+                <i class="fa-solid fa-bars"></i>
+                <a href="#" class="Logo">
+                    <img src="./Images/Logo.png" alt="">
+                    <p>Gromuse</p>
+                </a>
+            </div>
+            <div class="search-div">
+                <input type="text" placeholder="Search for Grocery, Stores, Vegetable or Meat">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="nav-items-left">
+                <div class="text">
+                    <i class="fa-solid fa-bolt"></i>
+                    <p>Order now and get it within 15 mins!</p>
+                </div>
+                <div class="cart-profile">
+                    <div class="cart-bg">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                    </div>
+                    <div class="profile-bg">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+            </div>
         </nav>
         <div class="hero">
             <div class="left-side">
@@ -19,6 +43,12 @@
                 <p>Get organic produce and sustainably sourced groceries delivery at up to 4% off grocery.</p>
                 <button type="button" class="button"> Shop now</button>
             </div>
+            <div class="right-side">
+                <img src="./Images/Header-2.png" alt="">
+            </div>
+        </div>
+        <div class="svg-container">
+
         </div>
     </div>
     <script src="./app.js"></script>

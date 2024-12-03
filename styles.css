@@ -7,4 +7,116 @@
 
 body {
   font-family: "Mona Sans", sans-serif;
+  padding: 1rem;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #064e3b;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  color: #cbd5e1;
+}
+nav .Logo-Menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+nav .Logo-Menu i {
+  font-size: 2rem;
+}
+nav .Logo-Menu a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+nav .Logo-Menu a img {
+  width: 6rem;
+  height: auto;
+}
+nav .search-div input {
+  background-color: #cbd5e1;
+  border: none;
+  padding: 0.5rem 1rem;
+  width: 40rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+nav .nav-items-left {
+  display: flex;
+  gap: 1rem;
+}
+nav .nav-items-left .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+nav .nav-items-left .text i {
+  color: #fb923c;
+}
+nav .nav-items-left .cart-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-items-left .cart-profile .cart-bg {
+  background-color: #cbd5e1;
+  padding: 1rem;
+  border-radius: 50%;
+}
+nav .nav-items-left .cart-profile .cart-bg i {
+  color: #064e3b;
+  font-size: 1.2rem;
+}
+nav .nav-items-left .cart-profile .profile-bg {
+  background-color: #cbd5e1;
+  padding: 1rem;
+  border-radius: 50%;
+  border: #064e3b dashed;
+}
+nav .nav-items-left .cart-profile .profile-bg i {
+  color: #064e3b;
+  font-size: 1.2rem;
+}
+
+.hero {
+  background-color: #064e3b;
+  margin: 1rem 0rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  border-radius: 0.5rem;
+  border-bottom-left-radius: 50% 40px;
+  border-bottom-right-radius: 50% 40px;
+}
+.hero .left-side h2 {
+  color: #cbd5e1;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero .left-side p {
+  color: #cbd5e1;
+  font-size: 1.3rem;
+}
+.hero .left-side .button {
+  border: none;
+  padding: 1rem 3rem;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  background-color: #d9f99d;
+  cursor: pointer;
+}
+.hero .right-side img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */

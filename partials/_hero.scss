@@ -1,0 +1,44 @@
+.hero {
+    background-color: #064e3b;
+    margin: 1rem 0rem;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem,1fr));
+    border-radius: .5rem;
+    border-bottom-left-radius: 50% 40px;
+    border-bottom-right-radius: 50% 40px;
+
+    .left-side {
+        & h2 {
+            color: #cbd5e1;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        & p {
+            color: #cbd5e1;
+            font-size: 1.3rem;
+        }
+
+        .button {
+            border: none;
+            padding: 1rem 3rem;
+            margin: 1rem 0rem;
+            border-radius: .5rem;
+            font-weight: bold;
+            font-size: 1rem;
+            color: black;
+            background-color: #d9f99d;
+            cursor: pointer;
+        }
+    }
+
+    .right-side {
+
+        & img {
+            width: 100%;
+            height: auto;
+
+        }
+    }
+}
