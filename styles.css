@@ -221,7 +221,7 @@ nav .nav-items-left .cart-profile .profile-bg i {
   position: absolute;
   top: 40%;
   right: 30%;
-  transform: translateY(-900px);
+  transform: translateY(-2000px);
   transition: all 0.8s ease-in-out;
 }
 .form-container form .input-name input {
