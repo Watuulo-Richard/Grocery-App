@@ -1,0 +1,56 @@
+.cards-container-2 {
+    .headings {
+    
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 0rem;
+    }
+
+    .card-items-container-two {
+        margin: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1rem;
+        
+        .card-item {
+            width: 100%;
+            background-color: #f8fafc;
+            text-align: center;
+
+            & img {
+                width: 100%;
+                height: auto;
+            }
+
+            & h5 {
+                color: black;
+                font-size: 1.2rem;
+            }
+
+            & p {
+                color: black;
+                font-size: 1.2rem;
+
+            }
+
+            h6 {
+                color: #6b7280;
+            }
+
+            & p {
+                color: black;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .card-icon-container {
+                background-color: red;
+                margin: .5rem;
+                // border-bottom-left-radius: 50% 40px;
+                // border-bottom-right-radius: 50% 40px;
+                // border-top-left-radius: 50% 40px;
+                // border-top-right-radius: 50% 40px;
+            }
+        }
+    }
+}

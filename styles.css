@@ -9,6 +9,7 @@ body {
   font-family: "Mona Sans", sans-serif;
   padding: 1rem;
   position: relative;
+  background-color: #d6d3d1;
 }
 
 nav {
@@ -70,6 +71,8 @@ nav .nav-items-left .cart-profile .cart-bg {
   background-color: #cbd5e1;
   padding: 1rem;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 nav .nav-items-left .cart-profile .cart-bg i {
   color: #064e3b;
@@ -119,4 +122,149 @@ nav .nav-items-left .cart-profile .profile-bg i {
 .hero .right-side img {
   width: 100%;
   height: auto;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+.cards-container .card-item {
+  width: 100%;
+  background-color: #f8fafc;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.cards-container .card-item .card-text h3 {
+  color: black;
+  font-size: 1rem;
+}
+.cards-container .card-item .card-text p {
+  color: #6b7280;
+}
+.cards-container .card-item .image-container {
+  display: flex;
+  justify-content: end;
+}
+.cards-container .card-item .image-container img {
+  width: 4rem;
+  height: auto;
+}
+.cards-container .card-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.cards-container .card-icon .addProductBtn {
+  border: none;
+  background-color: #064e3b;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.cards-container .card-icon .addProductBtn i {
+  color: #f8fafc;
+}
+.cards-container .card-icon p {
+  color: black;
+  font-weight: bold;
+}
+
+.cards-container-2 .headings {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+.cards-container-2 .card-items-container-two {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+.cards-container-2 .card-items-container-two .card-item {
+  width: 100%;
+  background-color: #f8fafc;
+  text-align: center;
+}
+.cards-container-2 .card-items-container-two .card-item img {
+  width: 100%;
+  height: auto;
+}
+.cards-container-2 .card-items-container-two .card-item h5 {
+  color: black;
+  font-size: 1.2rem;
+}
+.cards-container-2 .card-items-container-two .card-item p {
+  color: black;
+  font-size: 1.2rem;
+}
+.cards-container-2 .card-items-container-two .card-item h6 {
+  color: #6b7280;
+}
+.cards-container-2 .card-items-container-two .card-item p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cards-container-2 .card-items-container-two .card-item .card-icon-container {
+  background-color: red;
+  margin: 0.5rem;
+}
+
+.form-container form {
+  width: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  transform: translateY(-900px);
+  transition: all 0.8s ease-in-out;
+}
+.form-container form .input-name input {
+  background-color: #cbd5e1;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin: 0.3rem 0rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+.form-container form .input-location input {
+  background-color: #cbd5e1;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin: 0.3rem 0rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+.form-container form .input-id input {
+  background-color: #cbd5e1;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin: 0.3rem 0rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+.form-container form .submit {
+  background-color: #fb923c;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  margin: 0.3rem 0rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+}
+
+.visible {
+  transform: translateY(0px);
 }/*# sourceMappingURL=styles.css.map */
