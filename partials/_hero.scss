@@ -34,11 +34,44 @@
     }
 
     .right-side {
-
+        filter: drop-shadow(10px 10px 10px rgba(89, 168, 104, 0.87));
+        width: 400px;
+        height: auto;
         & img {
             width: 100%;
             height: auto;
-
+            
         }
     }
+
+}
+
+@media (max-width: 320px) {
+    .hero {
+        place-content: center;
+        justify-items: center;
+        text-align: center;
+        .left-side {
+            & h2 {
+                font-size: 1.5rem;
+            }
+
+            & p {
+                color: #cbd5e1;
+                font-size: 1rem;
+            }
+        }
+
+        .right-side {
+            filter: drop-shadow(-10px 10px 10px rgba(89, 168, 104, 0.87));
+            width: 400px;
+            text-align: center;
+            & img {
+                width: 50%;
+                height: auto;
+                
+            }
+        }
+    } 
+
 }

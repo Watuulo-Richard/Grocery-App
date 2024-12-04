@@ -40,23 +40,29 @@ nav .Logo-Menu a img {
   width: 6rem;
   height: auto;
 }
-nav .search-div input {
+nav .search-div {
   background-color: #cbd5e1;
+  border-radius: 2rem;
+  margin: 0rem 1rem;
+  padding: 1rem 2rem;
+}
+nav .search-div input {
+  background-color: transparent;
   border: none;
-  padding: 0.5rem 1rem;
+  outline: none;
   width: 40rem;
-  border-radius: 1rem;
   font-size: 1rem;
+}
+nav .search-div i {
+  color: #064e3b;
 }
 nav .nav-items-left {
   display: flex;
-  gap: 1rem;
 }
 nav .nav-items-left .text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
 }
 nav .nav-items-left .text i {
   color: #fb923c;
@@ -86,6 +92,23 @@ nav .nav-items-left .cart-profile .profile-bg {
 nav .nav-items-left .cart-profile .profile-bg i {
   color: #064e3b;
   font-size: 1.2rem;
+}
+@media (max-width: 320px) {
+  nav .Logo-Menu {
+    margin: 0rem 1rem;
+  }
+  nav .Logo-Menu a {
+    display: none;
+  }
+  nav .Logo-Menu .fa-bars {
+    display: block;
+  }
+  nav .search-div {
+    display: none;
+  }
+  nav .nav-items-left .text {
+    display: none;
+  }
 }
 
 .hero {
@@ -118,11 +141,39 @@ nav .nav-items-left .cart-profile .profile-bg i {
   background-color: #d9f99d;
   cursor: pointer;
 }
+.hero .right-side {
+  filter: drop-shadow(10px 10px 10px rgba(89, 168, 104, 0.87));
+  width: 400px;
+  height: auto;
+}
 .hero .right-side img {
   width: 100%;
   height: auto;
 }
 
+@media (max-width: 320px) {
+  .hero {
+    place-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .hero .left-side h2 {
+    font-size: 1.5rem;
+  }
+  .hero .left-side p {
+    color: #cbd5e1;
+    font-size: 1rem;
+  }
+  .hero .right-side {
+    filter: drop-shadow(-10px 10px 10px rgba(89, 168, 104, 0.87));
+    width: 400px;
+    text-align: center;
+  }
+  .hero .right-side img {
+    width: 50%;
+    height: auto;
+  }
+}
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
@@ -188,6 +239,7 @@ nav .nav-items-left .cart-profile .profile-bg i {
   width: 100%;
   background-color: #f8fafc;
   text-align: center;
+  border-radius: 1rem;
 }
 .cards-container-2 .card-items-container-two .card-item img {
   width: 100%;
@@ -212,6 +264,14 @@ nav .nav-items-left .cart-profile .profile-bg i {
 .cards-container-2 .card-items-container-two .card-item .card-icon-container {
   background-color: red;
   margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  border-bottom-left-radius: 50% 10px;
+  border-bottom-right-radius: 50% 10px;
+  padding: 0.5rem;
+}
+.cards-container-2 .card-items-container-two .card-item .card-icon-container:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
 .form-container form {

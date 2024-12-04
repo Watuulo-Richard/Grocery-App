@@ -1,6 +1,5 @@
 .cards-container-2 {
     .headings {
-    
         display: flex;
         justify-content: space-between;
         padding: 1rem 0rem;
@@ -16,6 +15,7 @@
             width: 100%;
             background-color: #f8fafc;
             text-align: center;
+            border-radius: 1rem;
 
             & img {
                 width: 100%;
@@ -46,11 +46,18 @@
             .card-icon-container {
                 background-color: red;
                 margin: .5rem;
-                // border-bottom-left-radius: 50% 40px;
-                // border-bottom-right-radius: 50% 40px;
-                // border-top-left-radius: 50% 40px;
-                // border-top-right-radius: 50% 40px;
+                transition: all .3s ease-in-out;
+                border-bottom-left-radius: 50% 10px;
+                border-bottom-right-radius: 50% 10px;
+                padding: .5rem;
+                
             }
+
+            .card-icon-container:hover {
+                transform: translateY(-5px);    /* Lift effect on hover */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            }
+  
         }
     }
 }
